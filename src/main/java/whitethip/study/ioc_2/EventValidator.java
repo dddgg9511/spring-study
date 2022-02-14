@@ -12,6 +12,6 @@ public class EventValidator implements Validator {
 
     @Override
     public void validate(Object target, Errors errors) {
-        ValidationUtils.rejectIfEmptyOrWhitespace(errors,"title", "notempty", "Empty title is now allival");
+        ValidationUtils.rejectIfEmptyOrWhitespace(errors,"title1", "notempty", "Empty title is now allival");
     }
 }
