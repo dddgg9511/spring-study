@@ -18,7 +18,7 @@ public class AppRunner implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
         System.out.println(validator.getClass());
-        Event event = new Event();
+        Event event = new Event(1);
         event.setEmail("");
         event.setLimit(-1);
 

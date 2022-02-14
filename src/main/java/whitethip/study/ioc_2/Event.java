@@ -17,6 +17,10 @@ public class Event {
     @Email
     String email;
 
+    public Event(Integer id) {
+        this.id = id;
+    }
+
     public Integer getLimit() {
         return limit;
     }
@@ -39,6 +43,16 @@ public class Event {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    @Override
+    public String toString() {
+        return "Event{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", limit=" + limit +
+                ", email='" + email + '\'' +
+                '}';
     }
 
     public Integer getId() {
