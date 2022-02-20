@@ -1,10 +1,13 @@
 package whitethip.study.ioc_2;
 
-public interface EventService {
+import org.springframework.lang.NonNull;
+import org.springframework.stereotype.Service;
 
-    void createEvent();
-
-    void publishEvent();
-
-    public void deleteEvent();
+@Service
+public class EventService {
+    @NonNull
+    public String createEvent(@NonNull String name){
+        //return "hello " + name;
+        return null;
+    }
 }
